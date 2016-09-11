@@ -1,3 +1,67 @@
 body {font-family: "Courier New", Courier, monospace;
-	background-color: #59594A;
-	color: #A3BFA8;}
+	background-color: #F8F4FF;
+	color: #170A1C;}
+
+.titleBox {
+	margin: auto;
+	border: 3px solid #170A1C;
+	width: 40%;
+	text-align: center;
+	min-width: 400px;
+	margin-top: 5%;
+}
+
+.name {
+	color: #170A1C;
+	font-family: "Courier";
+	font-size: 20px;
+	margin: 10px 0 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 20em;
+	animation: type 4s steps(60, end);
+}
+
+.name:nth-child(2){
+	animation: type2 8s steps(60,end);
+}
+
+.job {
+	color: #170A1C;
+	font-family: "Courier";
+	font-size: 20px;
+	margin: 10px 0 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 20em;
+	animation: type 4s steps(60, end);
+	animation-delay: 4s;
+}
+
+.job:nth-child(2){
+	animation: typeother 8s steps(60,end);
+}
+
+@keyframes type {
+	from { width: 0; }
+}
+
+@keyframes typeother{
+	0%{width: 0;}
+	50%{width: 0;}
+	100%{width: 100;}
+}
+
+.anim {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: red;
+}
+
+.container {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	background: yellow;
+}
