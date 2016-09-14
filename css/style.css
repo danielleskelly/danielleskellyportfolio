@@ -9,59 +9,40 @@ body {font-family: "Courier New", Courier, monospace;
 	text-align: center;
 	min-width: 400px;
 	margin-top: 5%;
+	min-height: 100px;
 }
 
 .name {
-	color: #170A1C;
-	font-family: "Courier";
 	font-size: 20px;
-	margin: 10px 0 0 10px;
-	white-space: nowrap;
-	overflow: hidden;
-	width: 20em;
-	animation: type 4s steps(60, end);
-}
-
-.name:nth-child(2){
-	animation: type2 8s steps(60,end);
+	margin: auto;
+	display: none;
 }
 
 .job {
-	color: #170A1C;
-	font-family: "Courier";
-	font-size: 20px;
-	margin: 10px 0 0 10px;
-	white-space: nowrap;
-	overflow: hidden;
-	width: 20em;
-	animation: type 4s steps(60, end);
-	animation-delay: 4s;
+	font-size: 16px;
+	margin: auto;
+	display: none;
 }
 
-.job:nth-child(2){
-	animation: typeother 8s steps(60,end);
+.home {
+	width: 200px;
+	height: 445px;
+	animation: spraySprite 1s, 1s nameAndJob 2s;
+	animation-fill-mode: both;
+	animation-delay: 2s;
+	animation-timing-function: step-end;
 }
 
-@keyframes type {
-	from { width: 0; }
+@keyframes spraySprite {
+	from {background: url("../assets/sprayingSheet.png") -65px -35px}
+	25% {background: url("../assets/sprayingSheet.png") -300px -35px}
+	50% {background: url("../assets/sprayingSheet.png") -510px -35px}
+	75% {background: url("../assets/sprayingSheet.png") -695px -35px}
+	to {background: url("../assets/sprayingSheet.png") -835px -35px}
 }
 
-@keyframes typeother{
-	0%{width: 0;}
-	50%{width: 0;}
-	100%{width: 100;}
+@keyframes nameAndJob {
+	
 }
 
-.anim {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	background: red;
-}
-
-.container {
-	width: 400px;
-	height: 400px;
-	position: relative;
-	background: yellow;
-}
+//change the typing bit to being spray painted so that I can incorporate the whole thing into css
