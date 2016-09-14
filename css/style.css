@@ -4,32 +4,32 @@ body {font-family: "Courier New", Courier, monospace;
 
 .titleBox {
 	margin: auto;
-	border: 3px solid #170A1C;
-	width: 40%;
-	text-align: center;
-	min-width: 400px;
+	width: 400px;
+	height: 100px;
 	margin-top: 5%;
-	min-height: 100px;
+	animation-name: nameAndJob;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+	animation-timing-function: step-end;
 }
 
-.name {
-	font-size: 20px;
-	margin: auto;
-	display: none;
+@keyframes nameAndJob {
+	from {background: url("../assets/nameSheet.png") 0px 0px}
+	20% {background: url("../assets/nameSheet.png") 0px -96px}
+	40% {background: url("../assets/nameSheet.png") 0px -193px}
+	60% {background: url("../assets/nameSheet.png") 0px -290px}
+	80% {background: url("../assets/nameSheet.png") 0px -392px}
+	to {background: url("../assets/nameSheet.png") 0px -488px}
 }
 
-.job {
-	font-size: 16px;
-	margin: auto;
-	display: none;
-}
-
-.home {
+.sprite {
 	width: 200px;
 	height: 445px;
-	animation: spraySprite 1s, 1s nameAndJob 2s;
-	animation-fill-mode: both;
+	animation-name: spraySprite;
 	animation-delay: 2s;
+	animation-duration: 1s;
+	animation-fill-mode: both;
 	animation-timing-function: step-end;
 }
 
@@ -41,8 +41,7 @@ body {font-family: "Courier New", Courier, monospace;
 	to {background: url("../assets/sprayingSheet.png") -835px -35px}
 }
 
-@keyframes nameAndJob {
-	
+@keyframes moveArm {
+	from {background: url("../assets/sprayingSheet.png") -835px -35px}
+	to {background: url("../assets/sprayingSheet.png") -695px -35px}
 }
-
-//change the typing bit to being spray painted so that I can incorporate the whole thing into css
