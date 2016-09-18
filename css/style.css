@@ -106,7 +106,7 @@ body {font-family: "Courier New", Courier, monospace;
 	to {background: url("../assets/transparent.gif") 0px 0px}
 }
 
-.github {
+#github {
 	display: none;
 	position: fixed;
 	text-align: center;
@@ -116,7 +116,7 @@ body {font-family: "Courier New", Courier, monospace;
 	top: 200px;
 }
 
-.linkedIn {
+#linkedIn {
 	display: none;
 	position: fixed;
 	text-align: center;
@@ -126,7 +126,7 @@ body {font-family: "Courier New", Courier, monospace;
 	top: 300px;
 }
 
-.amazon {
+#amazon {
 	display: none;
 	position: fixed;
 	text-align: center;
@@ -136,7 +136,7 @@ body {font-family: "Courier New", Courier, monospace;
 	top: 400px;
 }
 
-.game {
+#game {
 	display: none;
 	position: fixed;
 	text-align: center;
