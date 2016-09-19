@@ -9,8 +9,8 @@ body {font-family: "Courier New", Courier, monospace;
 
 .titleBox {
 	position: fixed;
-	left: 350px;
-	top: 10px;
+	left: 200px;
+	top: 5px;
 	width: 398px;
 	height: 100px;
 	margin-top: 5%;
@@ -74,7 +74,23 @@ body {font-family: "Courier New", Courier, monospace;
 
 .sparkle {
 	display: none;
+	position: fixed;
+	background-image: url("../assets/fullSpriteSheet.png");
+	background-position: 0px -2000px; 
 	width: 250px;
 	height: 50px;
 	left: 280px;
+	top: 200px;
+}
+
+.button {
+	display: none;
+	position: fixed;
+	background-color: #170A1C;
+	color: #e6f7ff;
+	width: 100px;
+	height: 50px;
+	border: 3px dotted #e6f7ff;
+	left: 695px;
+	top: 541px;
 }
